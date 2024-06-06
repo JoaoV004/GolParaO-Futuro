@@ -1,0 +1,310 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilo para o header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #082a80;
+    padding: 10px 20px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    height: 8vh;
+}
+
+header img {
+    width: 50px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    margin-right: 20px;
+    position: relative;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 10px;
+}
+
+header nav ul li::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #fff;
+    transition: width 0.3s ease;
+}
+
+header nav ul li:hover::after {
+    width: 100%;
+}
+
+.nav-buttons {
+    display: flex;
+    margin-right: 30px;
+}
+
+.botaoNav,
+.botaoNav1 {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+    width: 9vw;
+    font-weight: 400;
+}
+
+.botaoNav:hover,
+.botaoNav1:hover {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: transparent;
+    color: white;
+}
+
+/* Estilo para a primeira section */
+.hero {
+    height: 100vh;
+    background: linear-gradient( #082a80, #b6b4b480), url('../assets/imgs/lionel_messi_by_rokasme_d4m3xqu-pre.jpg') no-repeat center center/cover;
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: left;
+    padding: 0 20px;
+    margin-top: 60px; 
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+    line-height: 1.6;
+}
+
+/* Estilo para a segunda section */
+.frase-section {
+    height: 100vh;
+    background-color: rgba(248, 236, 236, 0.8);
+    color: #0a0a0a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.frase-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.frase-content h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.frase-content p {
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.icon-container {
+    margin: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-basis: calc(33.33% - 40px);
+}
+
+@media (max-width: 767px) {
+    .icon-container {
+        flex-basis: calc(50% - 40px);
+    }
+}
+
+.icon-container img {
+    width: 50px;
+    margin-bottom: 10px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px; 
+    font-size: 0.9em; 
+    color: white;
+    background-color: #082a80;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    animation: blink 3.5s infinite;
+}
+
+
+@media (max-width: 767px) {
+    .btn {
+        padding: 8px 16px; 
+        font-size: 0.8em; 
+    }
+}
+
+/* Section Desenvolvedor */
+.developer-section {
+    background: linear-gradient(rgba(248, 236, 236, 0.8) 20%, #082a80  ), url('https://www.transparenttextures.com/patterns/asfalt-dark.png');
+    background-size: cover;
+    padding: 50px 20px;
+    text-align: center;
+    position: relative;
+}
+
+.developer-section h1 {
+    color: #000000; 
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+.developer-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.developer-photo {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    margin: 0 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.developer-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.developer-info {
+    max-width: 600px;
+    text-align: left;
+    margin: 20px;
+    font-size: 1.1em;
+    line-height: 1.8em; /* Aumenta o espaçamento entre linhas */
+    color: #fff; /* Altera a cor do texto para branco */
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 200;
+    gap: 1rem;
+}
+
+.developer-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.developer-info ul li {
+    background: #000000; /* Fundo branco semi-transparente */
+    color: #ffffff; /* Texto branco */
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    transition: transform 0.3s ease; /* Adiciona transição suave */
+}
+
+.developer-info ul li:hover {
+    transform: translateY(-5px); /* Eleva o item ao passar o mouse */
+}
+
+.developer-info ul li::before {
+    content: "✔";
+    margin-right: 10px;
+    color: #2a8639; /* Marca de verificação amarela */
+}
+
+.developer-intro {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: rgba(214, 226, 236, 0.9);
+    color: #000000;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    animation: slideIn 1s ease-out;
+    text-align: left;
+    max-width: 300px;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+.contact-info {
+    display: flex;
+    align-items: center; 
+    justify-content: flex-end; 
+    margin-bottom: 20px; 
+    gap: 25px;
+    color: #000000;
+}
+
+.social-icons {
+    display: flex;
+    align-items: center; 
+}
+
+.social-icons a {
+    margin-right: 10px;
+}
+
+.social-icons img {
+    width: 50px; 
+    height: 50px; 
+}

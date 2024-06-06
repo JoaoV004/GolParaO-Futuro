@@ -1,0 +1,77 @@
+/* Estilos gerais */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+  margin: 0;
+  background-image: url(../assets/imgs/vista-do-torcedor-de-futebol-em-extase-com-rosto-pintado-curtindo-a-partida.jpg);
+}
+
+/* Estilos para a barra lateral */
+#container-lateral {
+  position: fixed; 
+  top: 0;
+  left: 0;
+  background-color: #4989B4; 
+  width: 200px; 
+  height: 100vh; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0; 
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); 
+  justify-content: space-between; 
+}
+
+/* Grupo de botões */
+.button-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%; 
+}
+
+/* Estilos para os links da barra lateral */
+.sidebar-link {
+  width: 100%; 
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+}
+
+/* Estilos para os botões da barra lateral */
+.sidebar-button {
+  background-color: #082a80; 
+  color: #ffffff; 
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin: 10px 0; 
+  cursor: pointer;
+  width: 80%; 
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  transition: background-color 0.3s; 
+}
+
+.sidebar-button:hover {
+  background-color: #0b4ddb; 
+}
+
+
+.logout-link {
+  margin-top: auto; 
+  padding-bottom: 1px; 
+  
+}

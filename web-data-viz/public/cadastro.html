@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Cadastro | Gol para o Futuro</title>
+
+  <script src="./js/sessao.js"></script>
+
+  <link rel="stylesheet" href="./css/cadastro.css" />
+  <link rel="icon" href="./assets/icon/shot.png" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+</head>
+
+<body >
+
+  <a href="index.html" class="back-button"><img src="" alt=""></a>
+
+  <div class="login">
+    <div class="alerta_erro" id="cardErro">
+      <span id="mensagem_erro"></span>
+    </div>
+    <div class="container">
+      <div class="card card-cadastro">
+        <h2>Bem-vindo!</h2>
+        <div class="formulario">
+          <div class="campo">
+            <span>Nome:</span>
+            <input id="nome_input" type="text" placeholder="Nome" />
+          </div>
+          <div class="campo">
+            <span>Email:</span>
+            <input id="email_input" type="email" placeholder="Digite seu email" />
+          </div>
+          <div class="campo">
+            <span>Senha:</span>
+            <input id="senha_input" type="password" placeholder="******" />
+          </div>
+          <button class="botao" onclick="cadastrar()">Cadastrar</button>
+        </div>
+      
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./js/cadastro.js">
+  </script>
+</body>
+</html>

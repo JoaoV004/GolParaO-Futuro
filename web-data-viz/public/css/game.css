@@ -1,0 +1,162 @@
+* {
+
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+
+body {
+    background-image: url(../assets/imgs/vista-do-torcedor-de-futebol-em-extase-com-rosto-pintado-curtindo-a-partida.jpg);
+    color: white;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Estilos para a barra lateral */
+#container-lateral {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #4989B4; 
+  width: 200px; 
+  height: 100vh; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0; 
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); 
+  justify-content: space-between; 
+}
+
+/* Grupo de botões */
+.button-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%; 
+}
+
+/* Estilos para os links da barra lateral */
+.sidebar-link {
+  width: 100%; 
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+}
+
+/* Estilos para os botões da barra lateral */
+.sidebar-button {
+  background-color: #082a80; 
+  color: #ffffff; 
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin: 10px 0; 
+  cursor: pointer;
+  width: 80%; 
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  transition: background-color 0.3s; 
+}
+
+.sidebar-button:hover {
+  background-color: #0b4ddb; /* Cor de fundo ao passar o mouse */
+}
+
+/* Estilos específicos para o link de logout */
+.logout-link {
+  margin-top: auto; 
+  padding-bottom: 1px; 
+  
+}
+
+
+.container {
+  background-color: #5e5eeb;
+  width: 90%;
+  max-width: 800px;
+
+  border: 2px solid #e1e1e6;
+  border-radius: 6px;
+  padding: 16px;
+  box-shadow: 0 0 2px 2px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.questions-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.question {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.answers-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.answer:disabled {
+  cursor: not-allowed;
+}
+
+.next-question {
+  margin-top: 32px;
+}
+
+.button {
+  background-color: #ffffff;
+  color: #000;
+  font-size: 16px;
+  font-weight: bold;
+  border: 0;
+  border-radius: 6px;
+  height: 48px;
+  padding: 0 32px;
+
+  transition: filter 0.1s;
+}
+
+.button:not(:disabled):hover {
+  filter: brightness(0.8);
+}
+
+/* Finish game */
+.final-message {
+  font-size: 20px;
+  text-align: center;
+}
+
+.final-message span {
+  display: block;
+  margin-top: 8px;
+}
+
+/* General styles */
+.hide {
+  display: none;
+}
+
+.correct {
+  background-color: #049b48;
+}
+
+.incorrect {
+  background-color: #a10101;
+}
+

@@ -1,0 +1,141 @@
+body {
+    background: linear-gradient( #082a80, #b6b4b480),url(../assets/imgs/pexels-grizzlybear-399187.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+}
+
+.login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding-top: 12.5vh;
+}
+
+span {
+    color: #000000;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    width: 30vw;
+    height: 70vh;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.card-cadastro h2 {
+    margin-bottom: 20px;
+    color: #333;
+    font-family: Arial, sans-serif;
+}
+
+.formulario {
+    width: 100%;
+}
+
+.campo {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.campo span {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+.campo input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    width: calc(100% - 22px); /* Adjust width to fit padding and border */
+    box-sizing: border-box;
+}
+
+.botao {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.botao:hover {
+    background-color: #218838;
+}
+
+.loading-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.progress {
+    border: 4px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 4px solid #3498db;
+    width: 40px;
+    height: 40px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.alerta_erro {
+    background-color: #ffffff;
+    border: 1px solid #ffffff;
+    color: #000000;
+    border-radius: 5px;
+    padding: 10px;
+    width: 250px;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    display: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: blinkRed 2.5s infinite;
+}
+
+@keyframes blinkRed {
+    0%, 100% {
+        border-color: #ffffff;
+        background-color: #ffffff;
+    }
+    50% {
+        border-color: #ff0000;
+        background-color: #ff0000;
+    }
+}
+
+.alerta_erro span {
+    font-size: 14px;
+}
+
+#mensagem_erro {
+    font-weight: bold;
+}

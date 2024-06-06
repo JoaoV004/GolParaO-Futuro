@@ -1,0 +1,128 @@
+/* Estilos gerais */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+  margin: 0;
+  background-image: url(../assets/imgs/vista-do-torcedor-de-futebol-em-extase-com-rosto-pintado-curtindo-a-partida.jpg);
+}
+
+/* Estilos para a barra lateral */
+#container-lateral {
+  position: fixed; /* Fixa a barra lateral na tela */
+  top: 0;
+  left: 0;
+  background-color: #4989B4; /* Cor de fundo */
+  width: 200px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0; /* Espaçamento interno */
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Sombra para a barra lateral */
+  justify-content: space-between; /* Distribui o espaço entre os elementos */
+}
+
+/* Grupo de botões */
+.button-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%; /* Para que os botões usem a largura completa */
+}
+
+/* Estilos para os links da barra lateral */
+.sidebar-link {
+  width: 100%; /* Faz com que os links ocupem a largura total */
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+}
+
+/* Estilos para os botões da barra lateral */
+.sidebar-button {
+  background-color: #082a80; /* Cor de fundo dos botões */
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin: 10px 0;
+  cursor: pointer;
+  width: 80%;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  transition: background-color 0.3s;
+}
+
+.sidebar-button:hover {
+  background-color: #0b4ddb; /* Cor de fundo ao passar o mouse */
+}
+
+/* Estilos específicos para o link de logout */
+.logout-link {
+  margin-top: auto;
+  padding-bottom: 1px;
+}
+
+/* Estilos para o contêiner do quiz */
+/* Estilos para o contêiner do quiz */
+.quiz-container {
+  width: 35%;
+  background: #fff;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  margin-left: auto; /* Centraliza o conteúdo */
+  margin-right: auto; /* Centraliza o conteúdo */
+  margin-top: 50px; /* Espaço superior */
+  margin-bottom: 50px; /* Espaço inferior */
+}
+
+.quiz-container h1 {
+  margin-bottom: 20px;
+}
+
+.question {
+  margin-bottom: 20px;
+}
+
+.question label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.question select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+button[type="button"] {
+  background-color: #28a745;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+  transition: background-color 0.3s;
+}
+
+button[type="button"]:hover {
+  background-color: #218838;
+}

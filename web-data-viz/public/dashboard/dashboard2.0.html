@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz | Gol para o Futuro</title>
+    <link rel="stylesheet" href="../css/dashboard.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="icon" href="../assets/icon/shot.png">
+</head>
+<body>
+    <div id="avisoCaptura"></div>
+    <div id="container-lateral">
+        <div class="button-group">
+            <a href="dashboard2.0.html" class="sidebar-link"><button class="sidebar-button">Gráficos</button></a>
+            <a href="../game.html" class="sidebar-link"><button class="sidebar-button">Game</button></a>
+            <a href="../formulario.html" class="sidebar-link"><button class="sidebar-button">Formúlario</button></a>
+        </div>
+        <a href="../index.html" class="sidebar-link logout-link"><button class="sidebar-button">Sair</button></a>
+    </div>
+    <div id="containerKpi">
+        <div class="kpi" id="kpiLigas">
+            <div class="infLigas">
+                <img src="../assets/icon/television.png" height="45px;">
+                <h4>Liga mais assistida</h4>
+            </div>
+            <div id="resultadoLiga"></div>
+        </div>
+
+        <div class="kpi" id="kpiTimes">
+            <div class="infLigas">
+                <img src="../assets/icon/fans.png" height="45px;">
+                <h4>Maior torcida</h4>
+                <span class="mostrarTorcida"></span>
+            </div>
+            <div id="resultadoTime"></div>
+        </div>
+    </div>
+    <div id="dashboard">
+        <div class="dashboard-container">
+            <div class="chart-container">
+                <canvas id="ligaChart" width="200" height="200"></canvas>
+            </div>
+            <div class="chart-container">
+                <canvas id="timeChart" width="200" height="200"></canvas>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+<script src="../js/quiz.js"></script>

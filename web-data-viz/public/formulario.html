@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formúlario | Gol para o Futuro</title>
+    <link rel="stylesheet" href="./css/formulario.css" />
+    <link rel="icon" href="../assets/icon/shot.png">
+    <script src="./js/quiz.js"></script>
+  </head>
+  <body>
+    <div id="avisoCaptura"></div>
+    <div id="container-lateral">
+        <div class="button-group">
+            <a href="./dashboard/dashboard2.0.html" class="sidebar-link"><button class="sidebar-button">Gráficos</button></a>
+            <a href="game.html" class="sidebar-link"><button class="sidebar-button">Game</button></a>
+            <a href="formulario.html" class="sidebar-link"><button class="sidebar-button">Formulário</button></a>
+        </div>
+        <a href="../index.html" class="sidebar-link logout-link"><button class="sidebar-button">Sair</button></a>
+    </div>
+
+    <div class="quiz-container">
+      <h1>Formúlario</h1>
+      <form action="#" method="post">
+        <div class="question">
+          <label for="select_liga">Qual liga você mais assistiu nos últimos dois anos?</label>
+          <select id="select_liga" name="liga">
+            <option value="#">Selecione uma liga</option>
+            <option value="Brasileirao">Brasileirão</option>
+            <option value="Premier_League">Premier League</option>
+            <option value="La_Liga">La Liga</option>
+            <option value="Serie_A">Série A (Itália)</option>
+            <option value="Bundesliga">Bundesliga</option>
+            <option value="Ligue_1">Ligue 1</option>
+            <option value="MLS">MLS</option>
+            <option value="Outras">Outras</option>
+          </select>
+        </div>
+        <div class="question">
+          <label for="select_time">Que time você torce?</label>
+          <select id="select_time" name="time">
+            <option value="#" selected>Selecione um time</option>
+            <option value="Flamengo" data-color="#FF0000">Flamengo</option>
+            <option value="Corinthians">Corinthians</option>
+            <option value="São_Paulo">São Paulo</option>
+            <option value="Palmeiras">Palmeiras</option>
+            <option value="Vasco">Vasco</option>
+            <option value="Grêmio">Grêmio</option>
+            <option value="Internacional">Internacional</option>
+            <option value="Cruzeiro">Cruzeiro</option>
+            <option value="Atletico_MG">Atlético Mineiro</option>
+            <option value="Santos">Santos</option>
+            <option value="Outros">Outros</option>
+          </select>
+        </div>
+        <button type="button" onclick="cadastrarQuiz()">Enviar</button>
+      </form>
+    </div>
+  </body>
+</html>
