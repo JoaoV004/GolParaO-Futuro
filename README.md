@@ -1,1 +1,2 @@
-# Projeto-Individual
+*TRELLO*
+https://trello.com/b/vKCeDDwB/projeto-individual
